@@ -1,0 +1,13 @@
+<template>
+  <div class="progress-container">
+    <div class="progress-bar" :style="{ width: progress + '%' }">
+      <span class="progress-text">{{ progress }}%</span>
+    </div>
+  </div>
+</template>
+
+<script setup lang="ts">
+defineProps({
+  progress: Number
+})
+</script>
